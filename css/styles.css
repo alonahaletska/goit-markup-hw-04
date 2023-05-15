@@ -21,6 +21,7 @@
   --secondary-bg--mode-dark: #2e2f42;
 
   --border:#e7e9fc;
+  --hero-gradient:rgba(46, 47, 66, 0.7);
 }
 
 /* СТИЛИ НАСЛЕДОВАНИЯ */
@@ -169,11 +170,15 @@ img {
 /* СЕКЦИЯ ГЕРОЙ */
 .hero {
   padding: 188px 0;
-  background: var(--secondary-bg--mode-dark);
   text-align: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-
 
 .hero-title {
   font-weight: 700;
@@ -210,9 +215,6 @@ img {
   background-color: #404bbf;
 }
 
-
-
-
 /* СЕКЦИЯ АССОЦИАЦИЙ */
 .about-list {
   display: flex;
@@ -222,6 +224,24 @@ img {
 .about-item {
   width: calc((100% - 72px) / 4);
 }
+
+.item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 112px;
+  width: 264px;
+  background: #F4F4FD;
+  border-radius: 4px;
+}
+
+.about-icon{
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
 
 .about-title {
   margin-bottom: 8px;
@@ -234,10 +254,6 @@ img {
 .about-text {
   color: var(--secondary-txt--mode-dark);
 }
-
-
-
-
 
 /* СЕКЦИЯ РАБОТ */
 .work-title {
@@ -303,7 +319,6 @@ img {
   color: var(--primary-txt--mode-dark);
   text-align: center;
   margin-bottom: 8px;
-  margin-top: 32px;
 }
 
 .team-text {
@@ -311,11 +326,102 @@ img {
   color: var(--secondary-txt--mode-dark);
 }
 
+
+.team-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.team-list .team-item {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  padding: 12px;
+  fill:var(--primary-bg--mode-light);
+  background-color: #4D5AE5;
+  border-radius: 50%;
+}
+.team-link:hover,
+.team-link:focus {
+  border-radius: 50%;
+  fill: var(--primary-bg--mode-light);
+  background-color:#404BBF ;
+}
+
+.team-icon {
+  width: 16px;
+  height: 16px;
+  fill: #4D5AE5;
+}
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+  fill: var(--primary-bg--mode-light);
+  background-color:#404BBF ;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--black-txt-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.clients {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid #2196f3;
+}
+.clients-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: #afb1b8;
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--blue-txt-color);
+}
+
 /* ПОДВАЛ СТРАНИЦЫ */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background: var(--secondary-bg--mode-dark);
+}
+
+.footer-box{
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
 }
 
 .footer-logo {
@@ -344,6 +450,57 @@ img {
   width: 264px;
   color: var(--main-txt--mode-light);
 }
+
+
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-txt-color);
+}
+
+.footer-lists{
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  align-items: center;
+
+}
+
+.footer-linkk{
+  display:inline-block;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--white-txt-color);
+}
+
+
+.footer-linkk:hover,
+.footer-linkk:focus {
+  background-color: var(--blue-txt-color);
+  border-radius: 50%;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-txt-color);
+} 
+
+
+
+
+
+
+
+
 /*--Страница портфолио--*/
 /* Секция фильтр */
 .filter{
