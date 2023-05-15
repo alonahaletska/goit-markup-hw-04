@@ -325,7 +325,7 @@ img {
 }
 
 .team-text {
-
+  margin-bottom: 8px;
   text-align: center;
   color: var(--secondary-txt--mode-dark);
 }
@@ -338,7 +338,7 @@ img {
   gap: 24px;
   list-style: none;
   padding: 0;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -380,8 +380,9 @@ img {
 }
 .team-link:hover .team-icon,
 .team-link:focus .team-icon {
-  fill: var(--primary-bg--mode-light);
-  background-color:#404BBF ;
+  fill: var(--svg);
+  background-color:#404BBF;
+
 }
 
 .section-title {
