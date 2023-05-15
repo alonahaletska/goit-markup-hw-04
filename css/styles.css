@@ -449,9 +449,9 @@ img {
   gap: 70px;
 } */
 
-/* .footer-wrapper{
+.footer-wrapper{
   margin-right: 120px;
-} */
+} 
 
 .footer-logo {
   font-family: var(--secondary-font);
