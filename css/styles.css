@@ -439,18 +439,19 @@ img {
 .footer-container{
   display: flex; 
   align-items: baseline;
-
+  gap: 70px;
+  margin-right: 120px;
 }
 
-.footer-box{
+/* .footer-box{
   display: flex;
   align-items: baseline;
   gap: 70px;
-}
+} */
 
-.footer-wrapper{
+/* .footer-wrapper{
   margin-right: 120px;
-}
+} */
 
 .footer-logo {
   font-family: var(--secondary-font);
