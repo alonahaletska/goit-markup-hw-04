@@ -24,6 +24,7 @@
   --hero-gradient:rgba(46, 47, 66, 0.7);
   --bg-color-icon: #4D5AE5;
   --svg: #f4f4fd;
+  --clients:#8e8f99;
 }
 
 /* СТИЛИ НАСЛЕДОВАНИЯ */
@@ -387,36 +388,41 @@ img {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
   text-align: center;
-  color: var(--black-txt-color);
+  color: var(--primary-txt--mode-dark);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1;
 }
 .clients {
   display: flex;
   justify-content: center;
-  column-gap: 30px;
+  gap: 24px;
 }
+
+.clients-item{
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+} 
+
 .clients-link {
   display: flex;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: var(--clients);
 }
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid #2196f3;
+  border-color: #404bbf;
+  color: #404bbf; 
 }
 .clients-icon {
-  width: 106px;
-  height: 60px;
-
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
