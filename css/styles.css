@@ -255,6 +255,11 @@ img {
 }
 
 /* СЕКЦИЯ РАБОТ */
+.work{
+  padding-top: 0;
+  padding-bottom: 120px;
+}
+
 .work-title {
   margin-bottom: 72px;
 }
@@ -461,10 +466,6 @@ img {
 .footer-title {
   margin-bottom: 16px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
   color: var(--primary-txt--mode-light);
 }
 
@@ -485,7 +486,6 @@ img {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  padding: 12px;
   background:var(--bg-color-icon) ;
   border-radius: 50%;
   fill: var(--white-txt-color);
