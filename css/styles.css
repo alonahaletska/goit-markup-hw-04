@@ -236,12 +236,6 @@ img {
   border-radius: 4px;
 }
 
-.about-icon{
-  display: block;
-  width: 64px;
-  height: 64px;
-}
-
 .about-title {
   margin-bottom: 8px;
   font-weight: 500;
@@ -333,8 +327,6 @@ img {
   gap: 24px;
   list-style: none;
   padding: 0;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 .box-item{
@@ -368,8 +360,6 @@ img {
 }
 
 .team-icon {
-  width: 16px;
-  height: 16px;
   fill: var(--svg);
 }
 .team-link:hover .team-icon,
@@ -428,8 +418,6 @@ img {
 .footer-container{
   display: flex; 
   align-items: baseline;
-  gap: 70px;
-  /* margin-right: 120px; */
 }
 
 .footer-wrapper{
